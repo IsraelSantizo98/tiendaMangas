@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +9,54 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="contact-container">
-        <div class="right">
-            <h2 class="title">Ingresa a tu cuenta</h2>
-            <!-- <img class="logo" src="src/img/logo.jpg" alt="Imagen login"> -->
-            <div class="form-container">
-                <div class="username">
-                    <input class="user-input" type="email" name="" id="" placeholder="Usuario">
-                </div>
-                <div class="input">
-                    <div class="input__overlay" id="input-overlay"></div>
-                    <i class="fas fa-lock input__lock"></i>
-                    <input class="input__password pass-input" id="input-pass" type="password" name="" placeholder="Contraseña">
-                    <i class="fas fa-eye input__icon" id="input-icon"></i> 
-                </div>
-                <div class="keepme">
-                    <input type="checkbox" name="" id="" checked="true">
-                    Manteneme logeado
-                </div>
-                <button type="submit">Ingresar</button>
-                <a class="link" href="#">Olvide mi contraseña</a>
-            </div>
+    <header class="header">
+        <div>
+            <h1 class="normal">Manga<span class="bold">GT</span></h1>
         </div>
-    </div>
-    <script src="build/js/app.js"></script>
+        <nav class="nav">
+            <ul>
+                <li>Mangas</li>
+                <li>Figuras</li>
+                <li>Promociones</li>
+                <li>Cuenta</li>
+            </ul>
+        </nav>
+        <div class="search">
+            <button class="btn-search">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" class="input-search" placeholder="¿Qué buscas?">
+        </div>
+    </header>
+    <section class="main">
+        <div class="contenedor">
+            <div class="vendidos">
+                <h2 class="centrar-texto">Más Vendidos</h2>
+                <div class="card">
+                    <img src="" alt="" srcset="">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+            <div class="mangas">
+                <h2 class="centrar-texto">Mangas</h2>
+            </div>
+            <div class="figuras">
+                <h2 class="centrar-texto">Figuras</h2>
+            </div>
+            <div class="boxsets">
+                <h2 class="centrar-texto">Boxsets</h2>
+            </div>
+        </section>
+        </div>
+    <footer class="footer">
+        <nav class="nav">
+            <ul>
+                <li>Mangas</li>
+                <li>Figuras</li>
+                <li>Promociones</li>
+                <li>Cuenta</li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
