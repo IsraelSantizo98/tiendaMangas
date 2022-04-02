@@ -1,0 +1,145 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contact-container{
+    background-image: url(../img/logo.webp);
+    
+    background-size: cover;
+    height: 100vh;
+    .right{
+        position: absolute;
+        width: 36rem;
+        left: 60%;
+        height: 58rem;
+        top: calc(50% - 58rem / 2 );
+        background-color: #ffff;
+        border-radius: 2.5rem;
+        text-align: center;
+        .title{
+            font-family: v.$fuente_titulos;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.5rem;
+            line-height: 14.5rem;
+            align-items: center;
+            color: #5754dd;
+        }
+        input[type="email"],
+        input[type="password"],
+        input[type="text"]{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 2rem;
+            color: #85b6ff;
+            padding: 2rem 1rem 2rem .5rem;
+            border: .2rem solid #568aee;
+            width: 28rem;
+            height: 4.5rem;
+            margin: 1.5rem;
+            border-radius: 2.5rem;
+            box-sizing: border-box;
+            text-align: center;
+            overflow: hidden;
+        }
+        input[type="checkbox"]{
+            vertical-align: middle;
+            margin-right: .3rem;
+            margin-bottom: .3rem;
+            font-weight: bold;
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+        .keepme{
+            margin: 1.5rem;
+            color: #71a1bd;
+            font-weight: bold;
+        }
+        button{
+            width: 26rem;
+            height: 4.5rem;
+            left: 127.5rem;
+            top: 78rem;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            background-color: rgba(135, 113,224,0.89);
+            border-radius: 2.5rem;
+        }
+        .link{
+            text-align: center;
+            display: block;
+            margin: 1.8rem;
+            color: #71a1bd;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .input{
+        position: relative;
+        padding: 1.35rem 1.25rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        column-gap: .75rem;
+        .input__lock, .input__icon {
+            font-size: 1.25rem;
+            z-index: 1;
+        }
+        .input__lock{
+            color: #000;
+            font-size: 1.8rem;
+        }
+        .input__icon {
+            color: v.$white-color;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        .input__password {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            z-index: 1;
+        }
+        .input__password::placeholder {
+            color: black;
+        }
+        .input__overlay {
+            width: 32px;
+            height: 32px;
+            background-color:v.$container-color;
+
+            position: absolute;
+            right: .9rem;
+            border-radius: 50%;
+            z-index: 0;
+            transition: .4s ease-in-out;
+        }
+          /* Transition effect */
+        .overlay-content {
+            width: 100%;
+            height: 100%;
+            border-radius: .5rem;
+            right: 0;
+        }
+        .overlay-content ~ .input__lock,
+        .overlay-content ~ .input__password,
+        .overlay-content ~ .input__password::placeholder {
+            color: v.$white-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contact-container{
+        background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
+        .rigth{
+            left: calc(68% - 500px / 2);
+        }
+    }
+}
