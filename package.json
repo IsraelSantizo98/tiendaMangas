@@ -33,6 +33,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "js-image-zoom": "^0.7.0",
     "postcss": "^8.4.12",
     "sass": "^1.49.11"
   },
