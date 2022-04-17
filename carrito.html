@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    
+    <script src="https://kit.fontawesome.com/1085598771.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="build/js/Drift.js"></script>
+    <title>MangaGT</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><h1 class="normal">Manga<span class="bold">GT</span></h1></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="producto.html">Mangas</a></li>
+                <li><a href="figuras.html">Figuras</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+                <li class="active"><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <button class="btn-search">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" class="input-search" placeholder="¿Qué buscas?">
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Gestiona tus Compras</h2>
+            <table>
+                <tr>
+                    <th>Producto(s)</th>
+                    <th>Cant</th>
+                    <th>Costo</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-image">
+                            <picture>
+                                <source srcset="build/img/chainsawman6.avif" type="image/avif">
+                                <source srcset="build/img/chainsawman6.webp" type="image/webp">
+                                <img loading="lazy" width="200" height="300" src="build/img/chainsawman6.jpg" alt="Portada Manga">
+                            </picture>
+                        </div>
+                        Chainsaw
+                    </td>
+                    <td>
+                        <div class="table-input">
+                            <input type="number" name="" id="" min="1">
+                        </div>
+                        <!-- <button onclick="dec()">-</button>
+                        <input name="number" type="text" readonly value="0">
+                        <button onclick="inc()">+</button>   -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <a href="index.html"><h1 class="normal">Manga<span class="bold">GT</span></h1></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="manga.html">Mangas</a></li>
+                <li><a href="figuras.html">Figuras</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
